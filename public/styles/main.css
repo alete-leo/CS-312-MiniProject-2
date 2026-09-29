@@ -27,7 +27,7 @@ h2 {
 .card {
   /** background: url("../images/whisper-img.jpg"); **/
   background-size: auto;
-  background-position: center;
+  background-position: left;
   background-repeat: no-repeat;
   width: var(--card-width);
   height: var(--card-height);
@@ -37,12 +37,14 @@ h2 {
   justify-content: center;
   align-items: center;
   text-align: center;
-  display: block flex; /** changed from flex to grid **/
-  font-size: 1.0em;
+  display: block; /** changed from flex to grid **/
+  font-size: 1.2em;
   color: rgb(88 199 250 / 100%); /** changes to 100% for text **/
   font-family: "Gloria Hallelujah", cursive;
   content: "";
   min-width: 400px;
+
+  margin: 0px 50px 0px 50px;
   
 }
 /**
