@@ -12,8 +12,9 @@ app.get("/", async (req, res) => {
     const result = await axios.get("https://www.thecocktaildb.com/api/json/v1/1/random.php");
 
     res.render("index.ejs", {
-      secret: result.data.secret,
-      user: result.data.username,
+      //secret: result.data.secret,
+      //user: result.data.username,
+      cocktail: result.data.drinks[0],
     });
   } catch (error) {
     console.log(error.response.data);
