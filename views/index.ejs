@@ -7,7 +7,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&family=Titan+One&display=swap"
     rel="stylesheet">
-  <link rel="stylesheet" type="text/css" href="styles/main.css"> <!-- keeping this structure -->
+  <link rel="stylesheet" type="text/css" href="styles/main.css"> <!-- keeping this structure and css, makes it look rly cool but instructions appear wrong place -->
 
 </head>
 
@@ -23,9 +23,10 @@ gonna need strDrink, strInstructions, strDrinkThumb for this but they kinda weir
       <h2>
         <%= cocktail.strDrink %>
       </h2>
-        <img src="<%= cocktail.strDrinkThumb %>"
+        <img class="card" src="<%= cocktail.strDrinkThumb %>"
           alt="<%= cocktail.strDrink %>" >
-
+          <!-- for some reason the placeholder image in public appears here while fetching data unless I have forgotten code somewhere-->
+          <!-- css might have something to do with it bc it still appears behind cocktail image and responds to the mouse -->
       <h3>Instructions</h3>
         <p>
           <%= cocktail.strInstructions %>
