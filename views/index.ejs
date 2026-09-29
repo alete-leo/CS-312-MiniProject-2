@@ -18,19 +18,26 @@ gonna need strDrink, strInstructions, strDrinkThumb for this but they kinda weir
 
 <body>
   <h1>Random Cocktail</h1>
-
-    <div class="card">
-      <h2>
+        <h2>
         <%= cocktail.strDrink %>
       </h2>
+
+    <div class="card">
+
         <img class="card" src="<%= cocktail.strDrinkThumb %>"
           alt="<%= cocktail.strDrink %>" >
           <!-- for some reason the placeholder image in public appears here while fetching data unless I have forgotten code somewhere-->
           <!-- css might have something to do with it bc it still appears behind cocktail image and responds to the mouse -->
-      <h3>Instructions</h3>
-        <p>
-          <%= cocktail.strInstructions %>
-        </p>
+          <!-- card classes get the image, which is causing the issue. Deleted that from css so I could keep the other styling -->
+        <div class="card">
+          <h3>Instructions</h3>
+              <p> <!-- added the styling and made it wider, fixed css so text would appear too-->
+                <%= cocktail.strInstructions %>
+              </p>
+        </div>
+            
+
+
 
     </div>
 </body>

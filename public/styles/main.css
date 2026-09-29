@@ -18,25 +18,34 @@ h1 {
   font-family: "Titan One", cursive;
   margin-bottom: 20px;
 }
+h2 {
+  color: white;
+  font-family: "Titan One", cursive;
+  margin-bottom: 20px;
+}
+
 .card {
-  background: url("../images/whisper-img.jpg");
-  background-size: cover;
+  /** background: url("../images/whisper-img.jpg"); **/
+  background-size: auto;
   background-position: center;
   background-repeat: no-repeat;
   width: var(--card-width);
   height: var(--card-height);
   padding: 3px;
   position: relative;
-  border-radius: 6px;
+  border-radius: 50px;
   justify-content: center;
   align-items: center;
   text-align: center;
-  display: flex;
-  font-size: 1.5em;
-  color: rgb(88 199 250 / 0%);
+  display: block flex; /** changed from flex to grid **/
+  font-size: 1.0em;
+  color: rgb(88 199 250 / 100%); /** changes to 100% for text **/
   font-family: "Gloria Hallelujah", cursive;
+  content: "";
+  min-width: 400px;
+  
 }
-
+/**
 .card:hover {
   color: rgb(88 199 250 / 100%);
   transition: color 1s;
@@ -46,7 +55,7 @@ h1 {
   animation: none;
   opacity: 0;
 }
-
+**/
 .card::before {
   content: "";
   width: 104%;
@@ -64,7 +73,7 @@ h1 {
   left: -2%;
   animation: spin 2.5s linear infinite;
 }
-
+/**
 .card::after {
   position: absolute;
   content: "";
@@ -87,6 +96,7 @@ h1 {
   transition: opacity 0.5s;
   animation: spin 2.5s linear infinite;
 }
+  **/
 @property --rotate {
   syntax: "<angle>";
   initial-value: 132deg;
